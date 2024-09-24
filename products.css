@@ -1,0 +1,129 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's width */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;           /* Make it span the full width */
+    padding: 15px;
+    z-index: 1000; 
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    float: left;
+}
+
+.navbar-links {
+    float: right;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    margin-right: 30px;
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.collection {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.collection-img {
+    width: 50%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.collection-content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(98, 7, 17);
+}
+
+.collection-title {
+    margin: 20px 0 20px 40px;
+    font-size: 100px;
+    color: antiquewhite;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+}
+
+.collection-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-list {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scroll */
+    margin-right: 50px;
+    
+}
+
+.product-list::-webkit-scrollbar {
+    display: none; 
+}
+
+.filter-list {
+    display: flex;
+    margin: 0 0 20px 50px;
+
+}
+
+.btn {
+    background-color: black;
+    color: antiquewhite;
+    font-size: 13px;
+    margin-right: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid;
+    
+}
+
+.selected {
+    background-color: antiquewhite;
+    color: black;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    margin-left: 50px;
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+

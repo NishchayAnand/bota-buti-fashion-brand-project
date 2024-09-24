@@ -1,0 +1,202 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's width */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;           /* Make it span the full width */
+    padding: 15px;
+    z-index: 1000; 
+    background-color: rgb(0, 0, 0, 0.3); 
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: antiquewhite;
+    float: left;
+}
+
+.navbar-links {
+    float: right;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    font-size: 14px;
+    color: antiquewhite;
+    margin-right: 30px;
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.home {
+    width: 100%;
+    height: 100%;
+    background-image: url("./Assets/Making-46-scaled\ 1.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* vertical alignment */
+}
+
+.home-content {
+    margin: 50px;
+    color: antiquewhite;
+}
+
+.home-title {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.about-btn {
+    all: unset;
+    background-color: antiquewhite;
+    color: rgba(37, 10, 10);
+    padding: 10px 40px 10px 40px;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.products {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-size: 25px;
+    margin: 100px 0 80px 0;
+}
+
+.products-cardlist {
+    width: 80%;
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scroll */
+    
+}
+
+.products-cardlist::-webkit-scrollbar {
+    display: none; 
+}
+
+.product-card {
+    flex: 0 0 auto;
+    width: 700px;
+    height: 400px;
+    background-color: white;
+    margin-right: 50px;
+    display: flex;
+}
+
+.product-card-img {
+    width: 50%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.product-card-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.product-card-title {
+    font-weight: bold;
+}
+
+.product-card-subtitle {
+    font-size: 15px;
+    margin-top: 15px;
+
+}
+
+.btn {
+    background-color: black;
+    color: antiquewhite;
+    margin-top: 60px;
+    padding: 20px 60px 20px 60px;
+    cursor: pointer;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the screen without distortion */
+}
+
+.journel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.journel-cardlist {
+    display: flex;
+}
+
+.journel-card {
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    margin: 0 30px 0 30px;
+}
+
+.journel-card-img {
+    width: 100%;
+    height: 50%;
+}
+
+.journel-card-content {
+    margin: 20px;
+}
+
+.journel-card-title {
+    font-weight: bold;
+}
+
+.journel-card-subtitle {
+    margin-top: 15px;
+    font-size: 14px;
+
+}
+
+.footer {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(0, 0, 0, 0.3); 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    color: antiquewhite;
+}
+
